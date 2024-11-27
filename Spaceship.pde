@@ -14,7 +14,6 @@ class Spaceship extends Floater
     myPointDirection = 0; // Facing upward
   }
 
-  @Override
   public void hyperspace() {
     myCenterX = Math.random() * width; // Random X position
     myCenterY = Math.random() * height; // Random Y position
