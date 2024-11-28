@@ -1,25 +1,24 @@
 class Spaceship extends Floater  
 {   
-    
-  public Spaceship() {
-    // Initialize all inherited variables
-    corners = 3; // Triangle-shaped spaceship
-    xCorners = new int[]{0, 10, -10}; // X-coordinates of the triangle
-    yCorners = new int[]{-15, 10, 10}; // Y-coordinates of the triangle
-    myColor = color(255, 255, 255); // White color
-    myCenterX = width / 2; // Start at center of screen
-    myCenterY = height / 2;
-    myXspeed = 0; // Initial speed
-    myYspeed = 0;
-    myPointDirection = 0; // Facing upward
-  }
-
-  public void hyperspace() {
-    myCenterX = Math.random() * width; // Random X position
-    myCenterY = Math.random() * height; // Random Y position
-    myXspeed = 0; // Stop horizontal movement
-    myYspeed = 0; // Stop vertical movement
-    myPointDirection = Math.random() * 360; // Random direction
-  }
-
+    public Spaceship(){
+     corners = 4;
+     xCorners = new int[]{-8,16,-8,-2};
+     yCorners = new int[]{-8, 0, 8, 0};
+     myColor = color(255,255,255);
+     myCenterX = 250;
+     myCenterY = 250;
+     myXspeed = 0;
+     myYspeed = 0;
+     myPointDirection = 0;
+    }
+    public void setXspeed(double x){myXspeed = x;}
+    public double getXspeed(){return myXspeed;}
+    public void setYspeed(double y){myYspeed = y;}
+    public double getYspeed(){return myYspeed;}
+    public void setPointDirection(int degrees){myPointDirection = degrees;}
+    public double getPointDirection(){return myPointDirection;}
+    public void setCenterX(int x) {myCenterX = x;}
+    public int getCenterX(){return (int)myCenterX;}
+    public void setCenterY(int y) {myCenterY = y;}
+    public int getCenterY(){return (int)myCenterY;}
 }
