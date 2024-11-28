@@ -1,18 +1,16 @@
 class Star //note that this class does NOT extend Floater
 {
-    private float x, y; // Star position
-  private int color;  // Star color
-
-  public Star(float x, float y) {
-    this.x = x;
-    this.y = y;
-    this.color = color(255, 255, 0); // Yellow color
+  private int myX, myY, myColor;
+  public Star() {
+   myX = (int)(Math.random()*500);
+   myY = (int)(Math.random()*500);
+   myColor = color((int)(Math.random()*255),
+                   (int)(Math.random()*255),
+                   (int)(Math.random()*255));
   }
-
-  public void show() {
-    fill(color);
-    noStroke();
-    ellipse(x, y, 3, 3); // Draw a small circle for the star
+  public void show(){
+   noStroke();
+   fill(myColor);
+   ellipse(myX, myY, 5, 5);
   }
-
 }
