@@ -1,6 +1,6 @@
 class Asteroidd extends Floater
 {
-  protected double speedRotation;
+  private double speedRotation;
   public  Asteroidd(){
     corners = 6;
      xCorners = new int[]{-10, 10, 20, 15, -5, -15};
@@ -10,9 +10,9 @@ class Asteroidd extends Floater
      myCenterY = (int)(Math.random()*500);
      myXspeed = (int)(Math.random() * 3);
      myYspeed = (int)(Math.random() * 3);
-    speedRotation = (int)(Math.random() * 5);
-    myPointDirection = 0;
-     
+     speedRotation = (int)(Math.random() * 5);    
+     myPointDirection = 0;
+    
   
   
   }
