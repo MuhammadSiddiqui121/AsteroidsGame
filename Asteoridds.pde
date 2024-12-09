@@ -10,8 +10,9 @@ class Asteroidd extends Floater
      myCenterY = (int)(Math.random()*500);
      myXspeed = (int)(Math.random() * 3);
      myYspeed = (int)(Math.random() * 3);
-     myPointDirection = 0;
-     speedRotation = (int)(Math.random() * 5);
+    speedRotation = (int)(Math.random() * 5);
+    myPointDirection = 0;
+     
   
   
   }
