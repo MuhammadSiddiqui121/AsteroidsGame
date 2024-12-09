@@ -1,7 +1,7 @@
 int health = 200;
 Spaceship bob = new Spaceship();
 Star [] galaxy = new Star[200];
-ArrayList <Asteroidd> horse = new ArrayList <Asteroidd>();
+ArrayList <Asteroidd> john = new ArrayList <Asteroidd>();
 public void setup() 
 {
   //your code here
@@ -9,8 +9,8 @@ public void setup()
   size(500,500);
   
   for( int i = 0; i < 10; i++){
-    Asteroidd duck = new Asteroidd();
-    horse.add(duck);
+    Asteroidd Doe = new Asteroidd();
+    john.add(Doe);
   }
   for(int i = 0; i < galaxy.length; i++)
   {
@@ -39,9 +39,9 @@ public void draw()
   horse.get(i).move();
   horse.get(i).show();
   float distance = dist(bob.getCenterX(), bob.getCenterY(), 
-  horse.get(i).getcenterX(), horse.get(i).getcenterY());
+  john.get(i).getcenterX(), john.get(i).getcenterY());
   if( distance <35){
-    horse.remove(i);
+    john.remove(i);
     i--;
     health -= 10;
   }
