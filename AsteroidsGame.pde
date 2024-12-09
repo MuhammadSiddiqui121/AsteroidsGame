@@ -1,10 +1,17 @@
+int health = 200;
 Spaceship bob = new Spaceship();
 Star [] galaxy = new Star[200];
+ArrayList<Asteroidd> horse = new ArrayList <Asteroidd>();
 public void setup() 
 {
   //your code here
   background(0);
   size(500,500);
+  
+  for( int i = 0; i< 0; i++){
+    Asteroidd duck = new Asteroidd();
+    horse.add(duck);
+  }
   for(int i = 0; i < galaxy.length; i++)
   {
   galaxy[i] = new Star();
@@ -26,7 +33,21 @@ public void draw()
   text(("Y:" + bob.getCenterY()),10,60);
   text(("Xspeed:" + (int)bob.getXspeed()),10,80);
   text(("Yspeed:" + (int)bob.getYspeed()),10,100);
+  text(("Health:" + health), 10,120);
+  
+  for( int i = 0; i < horse.size(); i++){
+  horse.get(i).move();
+  horse.get(i).show();
+  float distance = dist(bob.getCenterX(), bob.getCenterY(), 
+  horse.get(i).getcenterX(), horse.get(i).getcenterY());
+  if( distance <35){
+    horse.remove(i);
+    i--;
+    health -= 10;
+  }
 }
+}
+
 
 public void keyPressed(){
   //turn right
