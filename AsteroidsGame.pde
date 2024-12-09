@@ -43,8 +43,9 @@ public void draw()
   if( distance <35){
     horse.remove(i);
     health -= 10;
+   i--;
   }
-  i--;
+ 
 }
 }
 
