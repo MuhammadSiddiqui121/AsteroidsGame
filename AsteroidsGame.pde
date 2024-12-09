@@ -35,13 +35,14 @@ public void draw()
   text(("Yspeed:" + (int)bob.getYspeed()),10,100);
   text(("Health:" + health), 10,120);
   
-  for( int i = horse.size()-1; i >=0; i--){
+  for( int i =0; i >=10; i++){
   horse.get(i).move();
   horse.get(i).show();
   float distance = dist(bob.getCenterX(), bob.getCenterY(), 
   horse.get(i).getcenterX(), horse.get(i).getcenterY());
   if( distance <35){
     horse.remove(i);
+    i--;
     health -= 10;
   }
 }
