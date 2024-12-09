@@ -5,7 +5,7 @@ class Asteroidd extends Floater
     corners = 6;
      xCorners = new int[]{-10, 10, 20, 15, -5, -15};
      yCorners = new int[]{-10, -5, 5, 15, 15, 5};
-     myColor = color(169,169,169);
+     myColor = color(192);
      myCenterX = (int)(Math.random()*500);
      myCenterY = (int)(Math.random()*500);
      myXspeed = (int)(Math.random() * 3);
