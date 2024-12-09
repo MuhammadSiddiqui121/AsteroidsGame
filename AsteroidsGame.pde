@@ -8,7 +8,7 @@ public void setup()
   background(0);
   size(500,500);
   
-  for( int i = 0; i< 0; i++){
+  for( int i = 0; i< 10; i++){
     Asteroidd duck = new Asteroidd();
     horse.add(duck);
   }
