@@ -1,7 +1,7 @@
 int health = 200;
 Spaceship bob = new Spaceship();
 Star [] galaxy = new Star[200];
-ArrayList<Asteroidd> horse = new ArrayList<Asteroidd>();
+ArrayList <Asteroidd> horse = new ArrayList <Asteroidd>();
 public void setup() 
 {
   //your code here
