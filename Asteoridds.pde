@@ -13,7 +13,7 @@ class Asteroid extends Floater
      speedRotation = (int)(Math.random() * 5);    
      myPointDirection = 0;
     
-  
+
   
   }
 public void move() {
