@@ -1,7 +1,7 @@
 int health = 200;
 Spaceship bob = new Spaceship();
 Star [] galaxy = new Star[200];
-ArrayList <Asteroidd> horse = new ArrayList <Asteroidd>();
+ArrayList <Asteroid> horse = new ArrayList <Asteroid>();
 public void setup() 
 {
   //your code here
@@ -9,7 +9,7 @@ public void setup()
   size(500,500);
   
   for( int i = 0; i< 10; i++){
-    Asteroidd duck = new Asteroidd();
+    Asteroid duck = new Asteroid();
     horse.add(duck);
   }
   for(int i = 0; i < galaxy.length; i++)
