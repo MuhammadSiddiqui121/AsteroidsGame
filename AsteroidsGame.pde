@@ -87,4 +87,7 @@ public void keyPressed(){
    bob.setCenterY((int)(Math.random()*500));
    bob.setPointDirection((int)(Math.random()*360));
  }
+if( key == 'e'){
+bullet.add(new Bullet(bob));
+}
 }
