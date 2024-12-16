@@ -2,6 +2,7 @@ int health = 200;
 Spaceship bob = new Spaceship();
 Star [] galaxy = new Star[200];
 ArrayList <Asteroid> horse = new ArrayList <Asteroid> ();
+ArrayList <Bullet> bullets = new ArrayList <Bullet>();
 public void setup() 
 {
   //your code here
@@ -47,6 +48,17 @@ public void draw()
   }
  
 }
+for( int i = bullet.size()-1; i>= 0; i--){
+bullet.get(i).move();
+bullet.get(i).show();
+for( int nI = horse.size()-1; nI >= 0; nI--){
+if(dist((float)(bullet.get(i).myCenterX), (float)(bullet.get(i).myCenterY), (float)(horse.get(nI).mycenterX), (float)(horse.get(nI).mycenterY)) <= 20){
+bullet.remove(i);
+horse.remove(nI);
+break;
+    }
+  }
+  }
 }
 
 
