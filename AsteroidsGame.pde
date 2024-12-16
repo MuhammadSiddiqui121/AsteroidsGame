@@ -52,7 +52,7 @@ for( int i = bullet.size()-1; i>= 0; i--){
 bullet.get(i).move();
 bullet.get(i).show();
 for( int nI = horse.size()-1; nI >= 0; nI--){
-if(dist((float)(bullet.get(i).myCenterX), (float)(bullet.get(i).myCenterY), (float)(horse.get(nI).mycenterX), (float)(horse.get(nI).mycenterY)) <= 20){
+if(dist((float)(bullet.get(i).myCenterX()), (float)(bullet.get(i).myCenterY()), (float)(horse.get(nI).mycenterX()), (float)(horse.get(nI).mycenterY())) <= 20){
 bullet.remove(i);
 horse.remove(nI);
 break;
